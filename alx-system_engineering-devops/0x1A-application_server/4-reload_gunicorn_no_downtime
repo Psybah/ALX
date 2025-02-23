@@ -1,0 +1,4 @@
+#!/bin/bash
+
+# Send HUP signal to Gunicorn master process to gracefully reload workers
+sudo kill -HUP $(sudo cat /var/run/gunicorn.pid)
